@@ -1,0 +1,17 @@
+.services {
+  .services__container {
+    width: 90%;
+    margin: 0 auto;
+    h1 {
+      @include styleText($color-black-light, $fs-2 - 1, $fw-normal);
+      margin-bottom: $mg-1;
+    }
+    .services__items {
+      position: relative;
+      .card {
+        @extend .card-model;
+      }
+      @include owl-model(33%, -2%, -2%);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.partners {
+  background-color: $color-gray-5;
+  text-align: center;
+  padding: 20px 0;
+  h1 {
+    @include styleText($color-gray-4, $fs-1, null);
+    margin-bottom: $mg-2;
+  }
+  .row {
+    justify-content: center;
+  }
+  .partners__enroll {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: $mg-1;
+    .partners__part {
+      width: 50%;
+      padding: 28px 30px;
+      .partners__item {
+        max-width: 400px;
+        a {
+          @include styleText($color-black-light, $fs-2 - 1, $fw-bold-1);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        p {
+          @include styleText(null, $fs-2 - 4, null);
+          line-height: 25px;
+        }
+      }
+      &:first-child {
+        border-right: 1px solid $color-gray-6;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .partners {
+    .partners__part:first-child {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+footer {
+  padding: 30px 40px;
+  border-top: 1px solid $color-gray-6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 110px;
+      margin-right: 20px;
+    }
+    span {
+      margin: 0;
+      @include styleText($color-gray-4, $fs-1, null);
+    }
+  }
+  .footer__link {
+    a {
+      margin-right: 12px;
+      @include styleText($color-blue, $fs-1, null);
+      &:hover {
+        color: $color-black-0;
+        text-decoration: none;
+      }
+    }
+    .footer__none {
+      display: none;
+    }
+  }
+}
+
+@include responsive("medium") {
+  footer {
+    display: block;
+    .footer__logo {
+      display: block;
+    }
+    .footer__link {
+      margin-top: 20px;
+      .footer__none {
+        display: inline-block;
+      }
+    }
+  }
+}

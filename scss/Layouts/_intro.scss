@@ -1,0 +1,40 @@
+.intro {
+  background: linear-gradient(-45deg, $color-red-0 0%, $color-purple 100%);
+  padding: 20px 0;
+  .intro__item {
+    display: flex;
+    justify-content: center;
+    .intro__icon i {
+      @include styleText($color-white-0, $fs-4 + 5, null);
+      margin-right: 16px;
+    }
+    .intro__text {
+      p {
+        margin-bottom: 0;
+      }
+      p:first-child {
+        @include styleText($color-white-0, $fs-2 - 3, $fw-bold-1);
+      }
+      p:last-child {
+        @include styleText($color-white-0, $fs-1 + 2, $fw-normal);
+      }
+    }
+  }
+}
+
+@include responsive("extra-large") {
+  .intro {
+    .intro__icon i {
+      display: none;
+    }
+    .intro__text p {
+      text-align: center;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .intro {
+    display: none;
+  }
+}

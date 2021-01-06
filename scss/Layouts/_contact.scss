@@ -1,0 +1,48 @@
+.contact {
+  padding: 30px 40px;
+  border-top: 1px solid $color-gray-6;
+  ul {
+    li {
+      list-style: none;
+      a {
+        @include styleText($color-blue, $fs-1, null);
+      }
+      &:hover {
+        a {
+          color: $color-black-0;
+          text-decoration: none;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .contact__container {
+    display: flex;
+    justify-content: flex-end;
+    .dropup {
+      i {
+        margin-right: $mg-1;
+      }
+      span {
+        @include styleText(inherit, $fs-1, null);
+        margin-right: $mg-3;
+      }
+      &:hover {
+        border-color: $color-black-0;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .contact {
+    .contact__none {
+      display: none;
+    }
+    .contact__container {
+      justify-content: flex-start;
+    }
+  }
+}
