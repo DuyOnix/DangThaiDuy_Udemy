@@ -94,12 +94,12 @@
   .owl-nav {
     .owl-prev {
       @include styleOwl();
-      top: 33%;
+      top: $top;
       left: $left;
     }
     .owl-next {
       @include styleOwl();
-      top: 33%;
+      top: $top;
       right: $right;
     }
   }

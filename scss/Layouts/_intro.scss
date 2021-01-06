@@ -1,4 +1,7 @@
 .intro {
+  .intro__container {
+    padding: 0 15px;
+  }
   background: linear-gradient(-45deg, $color-red-0 0%, $color-purple 100%);
   padding: 20px 0;
   .intro__item {

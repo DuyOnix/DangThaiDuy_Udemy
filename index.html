@@ -35,6 +35,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="border: none"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -1659,6 +1660,34 @@
       </div>
     </section>
 
+    <section class="review">
+      <div class="review__container">
+        <div class="review__items owl-carousel owl-theme">
+          <div class="review__content">
+            <img src="./img/go_own_pace.svg" alt="" />
+            <div class="review__text">
+              <h1>Go at your own pace</h1>
+              <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+            </div>
+          </div>
+          <div class="review__content">
+            <img src="./img/learn_from_experts.svg" alt="" />
+            <div class="review__text">
+              <h1>Learn from industry experts</h1>
+              <p>Select from top instructors around the world</p>
+            </div>
+          </div>
+          <div class="review__content">
+            <img src="./img/video_courses.svg" alt="" />
+            <div class="review__text">
+              <h1>Find video courses on almost any topic</h1>
+              <p>Build your library for your career and personal growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="services">
       <div class="services__container">
         <h1>Students are viewing</h1>
@@ -2302,7 +2331,7 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script>
       $(".courses__items").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         dots: false,
@@ -2322,8 +2351,29 @@
       });
     </script>
     <script>
+      $(".review__items").owlCarousel({
+        loop: false,
+        margin: 20,
+        nav: true,
+        smartSpeed: 100,
+        responsive: {
+          0: {
+            items: 1,
+            dots: true,
+          },
+          576: {
+            items: 2,
+          },
+          768: {
+            nav: false,
+            items: 3,
+          },
+        },
+      });
+    </script>
+    <script>
       $(".services__items").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         dots: false,
@@ -2344,7 +2394,7 @@
     </script>
     <script>
       $(".feedback__items").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         dots: false,
