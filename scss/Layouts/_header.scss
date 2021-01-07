@@ -108,5 +108,8 @@ header {
     .header__responsive {
       display: flex;
     }
+    .header__right {
+      display: none;
+    }
   }
 }
