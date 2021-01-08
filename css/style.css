@@ -347,11 +347,13 @@ header .header__responsive a:last-child:hover {
   margin: 0 auto;
 }
 
-.courses .courses__content {
+.courses .courses__content .courses__text {
+  height: 100%;
   display: flex;
-  background-color: #f7f8fa;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  background-color: #f7f8fa;
+  padding: 0 20px;
 }
 
 .courses .courses__content .courses__text h1 {
@@ -437,7 +439,7 @@ header .header__responsive a:last-child:hover {
 }
 
 @media screen and (max-width: 991px) {
-  .courses__text {
+  .courses__content {
     display: none;
   }
 }
@@ -548,8 +550,8 @@ header .header__responsive a:last-child:hover {
 @media screen and (max-width: 991px) {
   .review .review__content {
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     height: 230px !important;
   }

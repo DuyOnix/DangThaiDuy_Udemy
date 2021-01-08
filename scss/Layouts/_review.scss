@@ -40,8 +40,8 @@
   .review {
     .review__content {
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
+      justify-content: space-between;
       text-align: center;
       height: 230px !important;
       img {

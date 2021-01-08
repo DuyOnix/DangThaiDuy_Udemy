@@ -4,11 +4,13 @@
     margin: 0 auto;
   }
   .courses__content {
-    display: flex;
-    background-color: $color-gray-5;
-    align-items: center;
-    justify-content: center;
     .courses__text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-gray-5;
+      padding: 0 $pd-2;
       h1 {
         @include styleText($color-black-0, $fs-2 - 1, $fw-bold-1);
       }
@@ -38,7 +40,7 @@
 }
 
 @include responsive("large") {
-  .courses__text {
+  .courses__content {
     display: none;
   }
 }
