@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 20px 0;
     .review__items {
-      @include owl-model(27%, -4%, -4%);
+      @include owl-model(27%, -25px, -25px);
     }
     .review__content {
       border: 1px solid $color-black-dark;
@@ -36,10 +36,25 @@
   }
 }
 
-// @include responsive("medium") {
-//   .review {
-//     .review__items {
-//       @include owl-model(33%, -2%, -2%);
-//     }
-//   }
-// }
+@include responsive("large") {
+  .review {
+    .review__content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      height: 230px !important;
+      img {
+        margin-bottom: $mg-1;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .review {
+    .review__content {
+      height: 200px !important;
+    }
+  }
+}

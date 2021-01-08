@@ -11,7 +11,7 @@
       .card {
         @extend .card-model;
       }
-      @include owl-model(33%, -2%, -2%);
+      @include owl-model(33%, -25px, -25px);
     }
   }
 }

@@ -167,7 +167,7 @@ header .header__right ul .icon:hover {
 }
 
 header .header__responsive {
-  width: 88.8%;
+  width: 80%;
   display: none;
   align-items: center;
   justify-content: space-between;
@@ -217,6 +217,10 @@ header .header__responsive a:last-child:hover {
 @media screen and (max-width: 767px) {
   header .header__responsive {
     display: flex;
+  }
+  header .header__left,
+  header .header__right {
+    display: none;
   }
 }
 
@@ -381,7 +385,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  left: -3%;
+  left: -25px;
 }
 
 .courses .courses__tab .owl-nav .owl-prev span {
@@ -409,7 +413,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  right: -3%;
+  right: -25px;
 }
 
 .courses .courses__tab .owl-nav .owl-next span {
@@ -457,7 +461,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 27%;
-  left: -4%;
+  left: -25px;
 }
 
 .review .review__container .review__items .owl-nav .owl-prev span {
@@ -485,7 +489,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 27%;
-  right: -4%;
+  right: -25px;
 }
 
 .review .review__container .review__items .owl-nav .owl-next span {
@@ -541,6 +545,25 @@ header .header__responsive a:last-child:hover {
   box-shadow: 0 0 2px 2px rgba(20, 23, 28, 0.1);
 }
 
+@media screen and (max-width: 991px) {
+  .review .review__content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 230px !important;
+  }
+  .review .review__content img {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review .review__content {
+    height: 200px !important;
+  }
+}
+
 .services .services__container {
   width: 90%;
   margin: 0 auto;
@@ -566,7 +589,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  left: -2%;
+  left: -25px;
 }
 
 .services .services__container .services__items .owl-nav .owl-prev span {
@@ -594,7 +617,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  right: -2%;
+  right: -25px;
 }
 
 .services .services__container .services__items .owl-nav .owl-next span {
@@ -753,7 +776,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  left: -2%;
+  left: -25px;
 }
 
 .feedback .feedback__container .feedback__items .owl-nav .owl-prev span {
@@ -781,7 +804,7 @@ header .header__responsive a:last-child:hover {
   border-radius: 50% !important;
   background-color: #fff !important;
   top: 33%;
-  right: -2%;
+  right: -25px;
 }
 
 .feedback .feedback__container .feedback__items .owl-nav .owl-next span {

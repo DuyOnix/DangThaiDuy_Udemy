@@ -47,7 +47,7 @@ header {
     }
   }
   .header__responsive {
-    width: 88.8%;
+    width: 80%;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -107,6 +107,10 @@ header {
   header {
     .header__responsive {
       display: flex;
+    }
+    .header__left,
+    .header__right {
+      display: none;
     }
   }
 }

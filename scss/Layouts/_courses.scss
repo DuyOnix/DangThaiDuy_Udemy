@@ -33,7 +33,7 @@
     .card {
       @extend .card-model;
     }
-    @include owl-model(33%, -3%, -3%);
+    @include owl-model(33%, -25px, -25px);
   }
 }
 
